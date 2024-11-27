@@ -217,7 +217,7 @@ ol {
     width: 300px;
     height: 300px;
     border-radius: 25px;
-    background-image: url(images/pexels-skitterphoto-589.jpg);
+    /* background-image: url(images/pexels-skitterphoto-589.jpg); */
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -228,11 +228,23 @@ ol {
     align-items: flex-end;
     padding: 20px;
 }
-.service-card:nth-child(2){
+.card-1{
+    background-image: url(/images/pexels-skitterphoto-589.jpg);
+}
+.card-2{
     background-image: url(images/ryan-nicoll-Su0SedcyOkQ-unsplash.jpg);
 }
-.service-card:nth-child(3){
+.card-3 {
     background-image: url(images/professional-bush-trimming-lawn-services.jpg);
+}
+.card-4 {
+    background-image: url(images/applying-fertilizer-blue-trowel-fertilizing-tomato-plant-shutterstock-com_15275.jpg);
+}
+.card-5 {
+    background-image: url(images/pre-seeding-in-fall-2048x1356.jpg);
+}
+.card-6 {
+    background-image: url(images//Preventive-Measures-for-Weed-Control-in-Agriculture.jpg);
 }
 .card-text{
     display: flex;
