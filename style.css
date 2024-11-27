@@ -21,7 +21,10 @@ a{
     text-decoration: none;
     transition: 0.3s;
     color: black;
-  }
+}
+h1{
+    font-weight: bold;
+}
 
   /*HERO SECTION*/
 
@@ -170,23 +173,81 @@ a{
     width: 50%;
 }
 .about-left img{
-    border: 1px solid;
+    border: 2px solid;
     border-color: var(--primary-font-color);
     border-radius: 50% 30% 30% 70% / 60% 40% 60% 40%;
 }
 .about-right{
     width: 50%;
 }
-.about-right h1{
+/* .about-right h1{
     font-size: 1.5em;
     font-weight: bold;
-}
+} */
 ol {
     margin: 10px 0 0 15px; 
 }
-
-/* MEDIA */
-
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin:50px 0 0 0;
+}
+.service-text{
+    margin: 0 0 20px 0;
+}
+.service-images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.service-card{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background-image: url(images/pexels-skitterphoto-589.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    margin: 0 30px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+.service-card:nth-child(2){
+    background-image: url(images/ryan-nicoll-Su0SedcyOkQ-unsplash.jpg);
+}
+.service-card:nth-child(3){
+    background-image: url(images/professional-bush-trimming-lawn-services.jpg);
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 13px 10px 10px 10px;
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    text-align: left;
+}
+.card-text p{
+    font-size: 0.9em;
+}
 @media (max-width: 768px) {
     /* HERO SECTION */
     .hero-section {
@@ -195,9 +256,10 @@ ol {
     }
 
     .main-card {
-        width: 60%; 
+        width: 80%;  
         height: auto; 
         padding: 15px;
+        margin-top: 30px; 
     }
 
     .text-top {
@@ -210,35 +272,119 @@ ol {
         text-align: center;
     }
 
+    /* NAVBAR */
+    .nav-bottom ul {
+        flex-direction: column;  
+        gap: 15px; 
+    }
+
     /* ABOUT SECTION */
     .about-us {
         flex-direction: column;
+        text-align: center;  
     }
 
     .about-left,
     .about-right {
         width: 100%; 
-        text-align: center; 
+        text-align: center;
+        margin-bottom: 20px;  
     }
 
     .about-left img {
-        max-width: 90%; 
-        margin-bottom: 20px; 
+        max-width: 80%;  
+        margin-bottom: 20px;
     }
 
     .about-right h1 {
         font-size: 1.2rem; 
+        margin-bottom: 10px;
     }
 
     ol {
-        margin: 10px auto; 
+        margin: 10px auto;
         padding-left: 20px;
     }
 
-    /* FOOTER SECTION */
+    /* SERVICE SECTION */
+    .service {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .service-card {
+        width: 100%;  
+        height: auto;
+        margin: 10px 0;  
+        display: block;
+    }
+
+    .service-card img {
+        height: 100%;
+        width: 100%;  
+    }
+
+    .card-text {
+        width: 100%; 
+        padding: 15px;
+        text-align: left;
+    }
+
+    /* FOOTER */
     .footer {
-        padding: 20px; 
+        padding: 20px 10px;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* HERO SECTION */
+    .hero-section {
+        padding: 20px 5px; 
+    }
+
+    .main-card {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    .text-top {
+        font-size: 1.3rem;  
+    }
+
+    .text-bottom {
+        font-size: 0.8rem;
+    }
+
+    /* NAVBAR */
+    .nav-bottom ul {
+        gap: 10px;
+    }
+
+    /* ABOUT SECTION */
+    .about-left img {
+        max-width: 100%; 
+    }
+
+    .about-right h1 {
+        font-size: 1rem; 
+    }
+
+    ol {
+        padding-left: 20px;
+    }
+
+    /* SERVICE SECTION */
+    .service-card {
+        width: 100%;  
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .card-text {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;  
     }
 }
 
